@@ -34,7 +34,7 @@ describe("Assignment Feature", () => {
           url: "moz-extension://multi-account-containers/confirm-page.html?" +
                `url=${encodeURIComponent(activeTab.url)}` +
                `&cookieStoreId=${activeTab.cookieStoreId}`,
-          cookieStoreId: undefined,
+          cookieStoreId: "firefox-default",
           openerTabId: null,
           index: 2,
           active: true

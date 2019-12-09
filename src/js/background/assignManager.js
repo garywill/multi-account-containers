@@ -490,6 +490,9 @@ const assignManager = {
         currentCookieStoreId = backgroundLogic.cookieStoreId(currentUserContextId);
         confirmUrl += `&currentCookieStoreId=${currentCookieStoreId}`;
       }
+      else {
+        currentCookieStoreId = "firefox-default";
+      }
       browser.tabs.create({
         url: confirmUrl,
         cookieStoreId: currentCookieStoreId,
